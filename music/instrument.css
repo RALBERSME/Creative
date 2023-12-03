@@ -1,0 +1,12 @@
+/*
+===
+INSTRUMENT
+===
+*/
+.instrument {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/02/04/denim-1866725_640.jpg");
+}
+
+.tabs .indicator {
+  background-color: blue !important;
+}
