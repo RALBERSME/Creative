@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Baking</title>
+  </head>
+  <body>
+    <div class="margin-baking">
+      <h1>The Baking Secrets</h1>
+      <section class="baking-section">
+        <img
+          class="baking-img"
+          src="https://cdn.pixabay.com/photo/2023/11/17/20/05/ai-generated-8394984_640.jpg"
+        />
+        <p class="baking-p">
+          Recipes, tips and tricks <br />
+
+          <a class="btn btn-baking" href="bakeAccordion.html">Go for Recipes</a>
+          <a
+            class="btn btn-baking"
+            href="https://cdn.pixabay.com/photo/2018/01/13/08/36/under-construction-3079801_640.png"
+            >Go for Tips and Tricks</a
+          >
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
+<style>
+  section {
+    position: relative;
+  }
+  .margin-baking {
+    margin: 1rem 5rem;
+  }
+  p.baking-p {
+    font-size: 5rem;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+  }
+  @media screen and (max-width: 800px) {
+    p.baking-p {
+      top: 5vh;
+      left: 50vw;
+      font-size: 2rem;
+    }
+    .btn {
+      margin: 5px;
+    }
+  }
+  .btn-baking {
+    background-color: bisque;
+  }
+  img.baking-img {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+</style>

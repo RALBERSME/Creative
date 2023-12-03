@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Waffles</title>
+  </head>
+
+  <body
+    style="
+      background-image: url('https://cdn.pixabay.com/photo/2010/12/10/08/waffles-1143_640.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div class="row orange lighten-5">
+      <div class="col s12">
+        <h1 class="center-align">All kinds of Waffles</h1>
+      </div>
+    </div>
+    <div class="container orange lighten-5">
+      <!-- COLLAPSIBLE -->
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">check</i> Buttermilk Waffles
+          </div>
+          <div class="collapsible-body">
+            <span>
+              <p>Ingredients</p>
+              <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>2 tablespoons white sugar</li>
+                <li>2 teaspoons baking powder</li>
+                <li>1 teaspoon baking soda</li>
+                <li>½ teaspoon salt</li>
+                <li>2 cups low-fat buttermilk</li>
+                <li>⅓ cup melted butter</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>2 large eggs</li>
+              </ul>
+              <p>Directions</p>
+
+              <p>
+                Whisk flour, sugar, baking powder, baking soda, and salt
+                together in a bowl until evenly combined. Whisk buttermilk and
+                melted butter together in a separate bowl; whisk in eggs. Stir
+                buttermilk mixture into flour mixture until just combined and
+                batter is slightly lumpy; stir in vanilla extract. Preheat a
+                waffle iron. To cook each waffle, pour enough batter into the
+                preheated waffle iron to reach 1/2 inch from the edge. Cook the
+                waffle.
+              </p>
+            </span>
+          </div>
+        </li>
+        <li>
+          <!-- pre select -->
+          <div class="collapsible-header active">
+            <i class="material-icons">check</i>Easy Waffles
+          </div>
+          <div class="collapsible-body">
+            <span
+              ><p>Ingredients</p>
+              <ul>
+                <li>2 tablespoons vegetable oil</li>
+                <li>2 eggs</li>
+                <li>2 cups milk</li>
+                <li>1 teaspoon salt</li>
+                <li>2 tablespoons white sugar</li>
+                <li>2 teaspoons baking powder</li>
+                <li>2 cups all-purpose flour</li>
+              </ul>
+              <p>Directions</p>
+
+              <p>
+                In a large bowl, stir together flour, baking powder, sugar and
+                salt. Add milk, eggs and oil; mix well. Spray preheated waffle
+                iron with non-stick cooking spray. Pour mix onto hot waffle
+                iron. Cook until golden brown.
+              </p>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">check</i>Classic Waffles
+          </div>
+          <div class="collapsible-body">
+            <span
+              ><p>Ingredients</p>
+              <ul>
+                <li>1 teaspoon vanilla extract</li>
+                <li>⅓ cup butter, melted</li>
+                <li>1 ½ cups warm milk</li>
+                <li>2 eggs</li>
+                <li>2 tablespoons white sugar</li>
+                <li>4 teaspoons baking powder</li>
+                <li>1 teaspoon salt</li>
+                <li>2 cups all-purpose flour</li>
+              </ul>
+              <p>Directions</p>
+
+              <p>
+                Gather all ingredients. In a large bowl, mix together flour,
+                salt, baking powder and sugar; set aside. Preheat waffle iron to
+                desired temperature. In a separate bowl, beat the eggs. Stir in
+                the milk, butter and vanilla. Pour the milk mixture into the
+                flour mixture; beat until blended. Ladle the batter into a
+                preheated waffle iron. Cook the waffles until golden and crisp.
+              </p>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <a class="btn orange lighten-5 brown-text" href="bakeAccordion.html">
+        Back to recipe survey
+      </a>
+      <a class="btn orange lighten-5 brown-text" href="flambee.html">
+        Next recipe
+      </a>
+    </div>
+
+    <!-- ./ CONTAINER END -->
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../materialize/js/materialize.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-button").dropdown({
+          constrainWidth: false,
+          hover: true,
+          belowOrigin: true,
+          alignment: "left",
+        });
+      });
+    </script>
+  </body>
+</html>

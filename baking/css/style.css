@@ -1,0 +1,20 @@
+.indicator-item {
+  background-color: hsl(43, 86%, 17%);
+}
+.btn:hover {
+  background-attachment: hsl(42, 28%, 28%);
+}
+
+.flambee-wrapper {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+}
+.flambee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.peach {
+  margin-left: 5rem;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Marble Cake</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap");
+
+      * {
+        margin: 0;
+      }
+
+      body {
+        font-family: "Goudy Bookletter 1911", serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        background: radial-gradient(
+          circle,
+          rgba(255, 197, 197, 1) 0%,
+          rgba(254, 187, 134, 1) 50%,
+          rgba(240, 229, 249, 1) 52%,
+          rgba(255, 221, 195, 1) 56%,
+          rgba(247, 244, 168, 1) 59%,
+          rgba(254, 187, 130, 1) 67%,
+          rgba(255, 197, 197, 1) 92%
+        );
+        width: 50vw;
+        height: 82vh;
+        margin: 0 auto;
+        border: 1px solid grey;
+        border-radius: 10px;
+      }
+
+      .text {
+        font-size: 12px;
+      }
+      .underline {
+        width: 12rem;
+        height: 0.25rem;
+        margin-bottom: 1.25rem;
+        background: #ffc5c5;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .underline2 {
+        width: 5rem;
+        height: 0.25rem;
+        margin-bottom: 0.25rem;
+        background: rgba(254, 187, 134, 1);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .separator {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      .recipe {
+        font-family: "Goudy Bookletter 1911", serif;
+        font-size: 1.5rem;
+      }
+      .ingredients {
+        margin-top: 1.5rem;
+        text-transform: capitalize;
+      }
+      p {
+        padding-left: 2rem;
+        padding-top: 0.25rem;
+      }
+      .btn {
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+        background: #ffc5c5;
+        color: var(--clr-primary-1);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: inline-block;
+        font-weight: 700;
+        -webkit-transition: var(--transition);
+        transition: var(--transition);
+        font-size: 0.875rem;
+        border: 2px solid transparent;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius);
+        text-decoration: none;
+      }
+      .btn:hover {
+        background: rgba(247, 244, 168, 1);
+      }
+      @media screen and (max-width: 992px) {
+        .container {
+          height: 40vh;
+          width: 80vw;
+        }
+        .separator {
+          margin-top: 2rem 1rem;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .recipe {
+          margin-top: 1rem;
+          font-family: "Goudy Bookletter 1911", serif;
+          font-size: 1.2rem;
+          width: 90vw;
+          padding-left: 5vw;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="separator">
+      <div class="container">
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 100 100"
+          style="enable-background: new 0 0 100 100"
+          xml:space="preserve"
+        >
+          <defs>
+            <path
+              id="arc"
+              d="M20,70 A30,40 0 1,1 90,70"
+              fill="none"
+              stroke="red"
+            ></path>
+          </defs>
+
+          <text class="text">
+            <textpath xlink:href="#arc">My wonderful marble cake</textpath>
+          </text>
+          <image
+            x="20"
+            y="15"
+            width="70"
+            height="100"
+            xlink:href="cake.png"
+          ></image>
+        </svg>
+      </div>
+      <div class="recipe">
+        <h1>recipe marble cake:</h1>
+        <div class="underline2"></div>
+        <div style="margin-bottom: 0.2rem" class="underline"></div>
+        <div class="ingredients">
+          <ul>
+            <li>300 grams butter</li>
+            <li>275 grams sugar</li>
+          </ul>
+          <p>stir until smooth and little by little add</p>
+          <ul>
+            <li>4 eggs</li>
+            <li>1 packet vanilla sugar</li>
+            <li>a pinch salt</li>
+            <li>500 grams flour</li>
+            <li>1 packet baking powder</li>
+            <li>1/8 litre milk</li>
+          </ul>
+          <p>
+            Pour 2/3 of the dough into a greased bowl; Mix the remaining dough
+            with
+          </p>
+          <ul>
+            <li>30 grams cocoa</li>
+            <li>25 grams sugar</li>
+            <li>2 tablespoons milk</li>
+            <li>2 tablespoons rum</li>
+          </ul>
+          <p>
+            Pour the cocoa dough into the mold over the light dough. Then use
+            two spoons to spiral through the layers of dough to create the
+            marble pattern.
+          </p>
+          <p>Bake in the oven at 200 degrees for 50 to 65 minutes.</p>
+        </div>
+        <a class="btn" href="bakeAccordion.html">back to recipe survey page</a>
+      </div>
+    </div>
+  </body>
+</html>

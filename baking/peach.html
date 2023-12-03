@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Peach Cake</title>
+  </head>
+
+  <body
+    style="
+      background-image: url('https://cdn.pixabay.com/photo/2019/08/10/07/37/peach-tree-4396330_640.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div class="row">
+      <div class="col s12">
+        <h1 class="deep-orange left-align">Peach Cake</h1>
+        <h5 class="deep-orange">click on cake to get the recipe</h5>
+
+        <a
+          class="waves-effect btn-small deep-orange black-text right-align"
+          href="bakeAccordion.html"
+        >
+          Search for other recipes.
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- SIDENAV -->
+
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="user-view">
+            <div
+              class="background"
+              style="
+                background-image: url('https://cdn.pixabay.com/photo/2020/04/04/18/29/peach-5003362_640.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+              >
+            </div>
+            <a href="#!"> <img class="circle" src="img/img5.jpg" /> </a
+            ><br /><br /><br /><br /><br /><br />
+            <a href="#!">
+              <span class="white-text name"></span>
+            </a>
+            <a>
+              <span class="black-text"></span>
+            </a>
+          </div>
+        </li>
+        <li class="deep-orange">
+          <a href="#!">
+            <i class="material-icons deep-orange">content_paste</i>Peach Cake
+            Recipe</a
+          >
+        </li>
+        <li>
+          <div style="margin-left: 5rem">
+            <p class="orange" style="padding-left: 5rem">Ingredients</p>
+
+            <ul class="orange lighten-5">
+              <li>175 g butter</li>
+              <li>120 g sugar</li>
+              <li>½ orange's grated peel</li>
+              <li>3 eggs</li>
+              <li>75 g wholemeal spelled flour</li>
+              <li>75 g spelled flour</li>
+              <li>1 teaspoon baking powder</li>
+              <li>80 g natural yogurt</li>
+              <li>3 peaches, skinned, cut into wedges</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div style="margin-left: 5rem">
+            <p class="orange" style="padding-left: 5rem">Directions</p>
+
+            <p class="orange lighten-5">
+              Dip the peaches in boiling water for about 30 seconds, remove with
+              a slotted spoon and rinse under cold water. Remove the skin, core
+              the peaches and cut them into wedges. <br />
+              Preheat the oven to 180°C top/bottom heat. Beat butter, sugar and
+              grated orange peel until very creamy until a whitish mixture forms
+              (approx. 5-7 minutes). Beat in the whole eggs one at a time (only
+              one at a time until a homogeneous mixture is formed, only then add
+              the next egg). <br />
+              Then stir in the flour sifted with baking powder and the yogurt.
+              Pour the mixture into a greased form or one lined with baking
+              paper (springform pan approx. 25 cm in diameter or rectangular
+              baking pan approx. 24x18 cm) and layer the sliced peach pieces on
+              top. <br />
+              Bake in the preheated oven at 180°C for approx. 50 minutes on the
+              middle rack (needle test!). If the cake browns too quickly, cover
+              it with aluminum foil.
+            </p>
+          </div>
+        </li>
+        <li>
+          <a class="waves-effect deep-orange" href="flambee.html"
+            >Next recipe</a
+          >
+          <br />
+        </li>
+      </ul>
+      <a href="#!" data-activates="slide-out" class="button-collapse">
+        <i class="material-icons large deep-orange-text">cake</i>
+      </a>
+
+      <!-- END HERE -->
+    </div>
+    <!-- ./ CONTAINER END -->
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../materialize/js/materialize.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-button").dropdown({
+          constrainWidth: false,
+          hover: true,
+          belowOrigin: true,
+          alignment: "left",
+        });
+
+        // JAVASCRIPT START HERE //
+        $(".button-collapse").sideNav({
+          menuWidth: "60%",
+          edge: "left",
+
+          draggable: true,
+        });
+      });
+    </script>
+  </body>
+</html>

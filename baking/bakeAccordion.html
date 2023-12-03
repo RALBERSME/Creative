@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Yummy Cakes</title>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col s12">
+        <h2 class="center-align brown-text lighten-3">Go for Cake Recipes</h2>
+      </div>
+    </div>
+    <div class="container center-align">
+      <h4 class="brown-text lighten-5">
+        Choose your cake by double clicking on the pic.
+      </h4>
+
+      <div
+        class="carousel brown lighten-4"
+        data-indicators="true red lighten-5"
+      >
+        <a class="carousel-item" href="peach.html">
+          <img
+            height="100%"
+            src="https://cdn.pixabay.com/photo/2015/12/03/13/51/peach-1074997_1280.jpg"
+          />
+          <p class="brown-text lighten-3">Peach Cake</p>
+        </a>
+        <a
+          class="carousel-item red lighten-5"
+          href="https://cdn.pixabay.com/photo/2018/01/13/08/31/under-construction-3079794_640.jpg"
+        >
+          <img
+            height="100%"
+            src="https://cdn.pixabay.com/photo/2018/05/22/08/46/cake-3420815_640.jpg"
+          />
+          <p class="brown-text lighten-3">Black Forest Cake</p>
+        </a>
+        <a class="carousel-item" href="marmor.html">
+          <img
+            height="100%"
+            src="https://cdn.pixabay.com/photo/2015/09/10/00/40/marble-bundt-cake-933879_640.jpg"
+          />
+          <p class="brown-text lighten-3">Classic Marble Cake</p>
+        </a>
+        <a
+          class="carousel-item"
+          href="https://cdn.pixabay.com/photo/2018/01/13/08/31/under-construction-3079794_640.jpg"
+        >
+          <img
+            height="100%"
+            src="https://cdn.pixabay.com/photo/2017/06/01/19/44/cherry-pie-2364352_640.jpg"
+          />
+          <p class="brown-text lighten-3">English Tea Cake special</p>
+        </a>
+
+        <a
+          class="carousel-item"
+          href="https://cdn.pixabay.com/photo/2018/01/13/08/31/under-construction-3079794_640.jpg"
+        >
+          <img
+            height="100%"
+            src="https://cdn.pixabay.com/photo/2018/08/30/10/31/plums-3641851_640.jpg"
+          />
+          <p class="brown-text lighten-3">Plum Streusel Slices</p>
+        </a>
+        <a class="carousel-item" href="flambee.html">
+          <img
+            height="100%"
+            src="https://cdn.pixabay.com/photo/2018/10/11/20/00/tarte-flambee-3740720_640.jpg"
+          />
+          <p class="brown-text lighten-3">Alsace Tarte Flambee</p>
+        </a>
+        <a class="carousel-item" href="waffles.html">
+          <img
+            height="100%"
+            src="https://images.pexels.com/photos/221063/pexels-photo-221063.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          />
+          <p class="brown-text lighten-3">waffles</p>
+        </a>
+      </div>
+
+      <div>
+        <p class="brown-text lighten-3">
+          All recipes are easy to handle. They were tested hundreds of times and
+          always provided excellent results.<br />
+          Feel free to modify the recipes the way you prefer.
+        </p>
+      </div>
+      <a class="btn red lighten-4 brown-text" href="baking.html">
+        Back to Baking Page
+      </a>
+      <!-- END HERE -->
+    </div>
+    <!-- ./ CONTAINER END -->
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../materialize/js/materialize.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        /* $(".dropdown-button").dropdown({
+          constrainWidth: false,
+          hover: true,
+          belowOrigin: true,
+          alignment: "left",
+        });*/
+
+        // JAVASCRIPT START HERE //
+        $(".carousel").carousel();
+
+        $(".carousel-slider").carousel({ fullWidth: true });
+      });
+    </script>
+  </body>
+</html>
