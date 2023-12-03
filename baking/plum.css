@@ -1,0 +1,101 @@
+.baum {
+  display: block;
+  height: 80vh;
+  width: 80vh;
+  position: relative;
+  background-image: url("https://cdn.pixabay.com/photo/2014/12/22/00/07/tree-576847_640.png");
+  background-repeat: no-repeat;
+}
+.pflaume {
+  position: absolute;
+  max-height: 5rem;
+  max-width: 5rem;
+
+  animation: falling 3s linear infinite;
+}
+
+@keyframes falling {
+  0% {
+    max-height: 5rem;
+    max-width: 5rem;
+    top: 15vh;
+    left: 20rem;
+    color: var(--color-1);
+  }
+  20% {
+    max-height: 6rem;
+    max-width: 6rem;
+    top: 17.5vh;
+    left: 21rem;
+    color: var(--color-1);
+  }
+  25% {
+    max-height: 7rem;
+    max-width: 7rem;
+    top: 20vh;
+    left: 22rem;
+    color: var(--color-2);
+  }
+  30% {
+    max-height: 8rem;
+    max-width: 8rem;
+    top: 25vh;
+    left: 23rem;
+    color: var(--color-1);
+  }
+  45% {
+    max-height: 8.5rem;
+    max-width: 8.5rem;
+    top: 27.5vh;
+    left: 24rem;
+    color: var(--color-2);
+  }
+  50% {
+    max-height: 9rem;
+    max-width: 9rem;
+    top: 30vh;
+    left: 23rem;
+    color: var(--color-3);
+  }
+  95% {
+    max-height: 10rem;
+    max-width: 10rem;
+    top: 35vh;
+    left: 21rem;
+    color: var(--color-3);
+  }
+  100% {
+    max-height: 12rem;
+    max-width: 12rem;
+    top: 65vh;
+    left: 20rem;
+    color: var(--color-1);
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+.recipe-heading {
+  font-size: 1rem;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .recipe-heading {
+    top: 80vh;
+    margin: 2.5rem;
+    max-width: 80vw;
+  }
+  .footer {
+    display: none;
+  }
+}
