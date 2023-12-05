@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="character.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a character</title>
+  </head>
+
+  <body id="home">
+    <div class="navbar-fixed">
+      <nav class="yellow darken-2">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo">Character</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="theatre.html">Theatre</a>
+              </li>
+
+              <li>
+                <a href="../index.html">Creative page</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav green lighten-4" id="mobile-nav">
+      <li>
+        <a href="theatre.html">Theatre</a>
+      </li>
+
+      <li>
+        <a href="../index.html">Creative page</a>
+      </li>
+    </ul>
+
+    <!-- Section: Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 c-image1">
+            <p></p>
+          </div>
+
+          <div class="col s12 m6 c-image2">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Follow -->
+    <section class="section section-follow yellow darken-2 white-text center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h4>Which character do you want to play?</h4>
+            <p>If you still have no idea:</p>
+
+            <a
+              href="https://improwiki.com/de/wiki/improtheater/special/category/36/charakter-figur"
+              class="btn btn-large yellow darken-3"
+              target="_blank"
+              >More Inspiration</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../materialize/js/materialize.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Init Side nav
+        $(".button-collapse").sideNav();
+      });
+    </script>
+  </body>
+</html>
