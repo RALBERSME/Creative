@@ -10,6 +10,6 @@ function func() {
   window.speechSynthesis.speak(msg);
 
   alert(
-    "Oh my dear friend, - wasn`t that horrible? We will show you how to become a better speaker...at the moment, this project is unfortunately still under construction....It will be updated in the next few months. See you then again. For now you might enjoy the other parts of myCreativity page. Thanks."
+    "Oh my dear friend, - wasn`t that horrible? We will show you how to become a better speaker...at the moment, this project is unfortunately still under construction ....It will be updated in the next few months. See you then again. For now you might enjoy the tongue twisters. Thanks."
   );
 }
