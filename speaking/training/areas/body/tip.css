@@ -96,11 +96,13 @@ a:hover {
   background-color: #bc72d5;
   color: white;
 }
-a.back {
+a.back,
+a.back-large {
   text-decoration: none;
   color: black;
 }
-a.back:hover {
+a.back:hover,
+a.back-large:hover {
   color: white;
 }
 .line {
@@ -108,4 +110,31 @@ a.back:hover {
 }
 .line-down {
   border-bottom: 1.5px solid white;
+}
+.small-only {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-repeat: repeat-y;
+  }
+  section {
+    position: absolute;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .back {
+    position: relative;
+    top: 10%;
+  }
+  .top {
+    margin-top: -100%;
+  }
+  .small-only {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .back-large {
+    display: none;
+  }
 }
