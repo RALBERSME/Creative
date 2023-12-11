@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2016/08/03/09/01/woman-1566154_640.jpg")
+    center center/cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Raleway", Arial, sans-serif;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header {
+  width: 350px;
+  height: 80px;
+  border: 7px solid #e6b42b;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.top-half {
+  color: #eb3939;
+  animation: split 4s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.bottom-half {
+  color: #e6b42b;
+  animation: split 4s linear infinite reverse;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+.container {
+  margin: 25px;
+}
+@keyframes split {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+a {
+  text-decoration: none;
+  color: #e6b42b;
+}
+.back {
+  font-size: 1.28rem;
+}
+a:hover,
+.back:hover {
+  color: #eb3939;
+}
+.list {
+  width: 60%;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 800px) {
+  body {
+    background: black;
+  }
+  .list {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
