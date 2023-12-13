@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+  background-color: rgb(231, 130, 42);
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://cdn.pixabay.com/photo/2023/08/07/13/45/mailman-8175076_640.jpg")
+    no-repeat center/cover;
+}
+
+.sm {
+  display: none;
+}
+.card {
+  width: 400px;
+  height: 200px;
+
+  background: url("https://cdn.pixabay.com/photo/2017/01/31/00/48/envelope-2022710_640.png")
+    no-repeat center/cover;
+}
+.postcard {
+  width: 340px;
+  height: 200px;
+  margin: 5px;
+  background: url("https://cdn.pixabay.com/photo/2016/05/24/13/22/postcard-1412352_640.png")
+    no-repeat center/cover;
+}
+.text {
+  padding-top: 20%;
+  padding-left: 10px;
+  display: flex;
+  text-align: left;
+  justify-self: flex-end;
+  color: rgb(154, 45, 6);
+  font-weight: 600;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  padding-top: 55px;
+  padding-left: 90px;
+  animation: dotbeat 1.4s linear infinite;
+}
+
+.dot:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: rgb(154, 45, 6);
+  border-radius: 100%;
+}
+
+@keyframes dotbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.intro {
+  padding-top: 20%;
+  padding-left: 10px;
+  display: flex;
+  text-align: left;
+  justify-self: flex-end;
+  color: rgb(154, 45, 6);
+  font-weight: 600;
+}
+.text2 {
+  display: flex;
+  text-align: left;
+  justify-self: flex-end;
+  color: rgb(154, 45, 6);
+  font-weight: 600;
+  padding-left: 10px;
+}
+@media screen and (max-width: 880px) {
+  body {
+    margin: 0vh auto;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sm {
+    display: block;
+  }
+}
