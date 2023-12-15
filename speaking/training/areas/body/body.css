@@ -35,6 +35,9 @@ body {
 .green {
   display: none;
 }
+.small {
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .wrong {
     display: none;
@@ -60,5 +63,11 @@ body {
   }
   .here {
     font-family: "Times New Roman", Times, serif;
+  }
+  .small {
+    display: inline-block;
+  }
+  .big {
+    display: none;
   }
 }
