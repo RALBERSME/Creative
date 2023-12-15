@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2022/12/20/07/51/woman-7667242_640.jpg")
+    no-repeat center/cover;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 320px;
+  border-bottom: 3px solid #fff;
+}
+
+.cloud {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: -200px;
+  left: -250px;
+  background: white;
+  border-radius: 100px;
+}
+
+.sun {
+  height: 120px;
+  width: 120px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.cloud:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #fff;
+  top: -50px;
+  left: 40px;
+  box-shadow: 90px 0 0 30px #fff;
+}
+
+.fall {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  left: -250px;
+}
+span {
+  width: 20px;
+  height: 20px;
+  background: #f5dc83;
+  border-radius: 50%;
+  margin: 0 2px;
+  animation: falling 5s linear infinite;
+  transform-origin: bottom;
+  animation-duration: calc(18s / var(--seconds));
+}
+span.white {
+  background: white;
+}
+.freckles {
+  position: relative;
+  top: 246px;
+  color: white;
+  font-size: 2rem;
+}
+a {
+  position: relative;
+  top: 240px;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+a:hover {
+  color: #f5dc83;
+}
+@keyframes falling {
+  0% {
+    transform: translateY(-250px) scale(1);
+  }
+  70% {
+    transform: translateY(10px) scale(1);
+  }
+  100% {
+    transform: translateY(10px) scale(0);
+  }
+}
+@media screen and (max-width: 880px) {
+  .cloud {
+    left: -90px;
+  }
+}
