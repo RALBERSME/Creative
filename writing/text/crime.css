@@ -53,11 +53,11 @@ a:hover {
 }
 @keyframes driving {
   from {
-    background-position: bottom right;
+    background-position: bottom left;
   }
 
   to {
-    background-position: bottom left;
+    background-position: bottom right;
   }
 }
 .container {
@@ -86,5 +86,14 @@ a:hover {
     font-size: 1.5rem;
     padding-left: 0px;
     background-color: rgb(228, 226, 226);
+  }
+  @keyframes driving {
+    from {
+      background-position: bottom right;
+    }
+
+    to {
+      background-position: bottom left;
+    }
   }
 }
