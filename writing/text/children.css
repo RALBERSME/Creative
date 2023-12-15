@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_640.png")
+    #212121;
+}
+
+.line {
+  width: 460px;
+  border-bottom: 4px solid white;
+  position: relative;
+  animation: animateline 2s linear infinite;
+}
+
+.hexagon {
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  width: 50px;
+  height: 30px;
+  background: url("https://cdn.pixabay.com/photo/2017/01/31/20/45/cartoon-2027156_640.png");
+  animation: animatehexagon 20s linear infinite;
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2017/01/31/20/45/cartoon-2027156_640.png");
+  transform: rotate(60deg);
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2017/01/31/20/45/cartoon-2027156_640.png");
+  transform: rotate(-60deg);
+}
+.circle {
+  background: url(leaf.png);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.ball {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: fuchsia;
+  display: flex;
+  position: relative;
+  left: -265px;
+  top: 82px;
+  z-index: -1;
+  transform: rotate(-60deg);
+}
+@keyframes animatehexagon {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 50px);
+    transform: rotate(720deg);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes animateline {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.tips {
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-left: 10rem;
+}
+li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(229, 222, 12);
+}
+.links {
+  margin-top: 30px;
+  margin-left: -50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 880px) {
+  li {
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+}

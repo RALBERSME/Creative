@@ -12,18 +12,6 @@ body {
   min-height: 100vh;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  z-index: 100;
-}
-
 a:hover {
   background: #098ea9;
   color: #fff;
@@ -48,8 +36,8 @@ a:hover {
 
 #text {
   position: absolute;
-  font-size: 5em;
-  color: #fff;
+  font-size: 4.5em;
+  color: rgb(243, 109, 13);
   text-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -74,4 +62,12 @@ a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+}
+.small {
+  display: none;
+}
+@media screen and(max-width: 880px) {
+  .small {
+    display: inline-block;
+  }
 }

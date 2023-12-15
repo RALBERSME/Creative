@@ -53,14 +53,38 @@ a:hover {
 }
 @keyframes driving {
   from {
-    background-position: bottom left;
+    background-position: bottom right;
   }
 
   to {
-    background-position: bottom right;
+    background-position: bottom left;
   }
 }
 .container {
   display: grid;
   grid-template-columns: 5fr 2fr;
+}
+
+@media screen and (max-width: 880px) {
+  .car {
+    position: absolute;
+    left: 100px;
+    bottom: -10px;
+    width: 200px;
+  }
+
+  .police {
+    position: absolute;
+    left: 300px;
+    bottom: 55px;
+    width: 250px;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  a:hover {
+    font-size: 1.5rem;
+    padding-left: 0px;
+    background-color: rgb(228, 226, 226);
+  }
 }
