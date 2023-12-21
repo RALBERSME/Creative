@@ -5,8 +5,7 @@ body {
   align-items: center;
   font-family: "Lato", sans-serif;
   background-color: #262626;
-  background: url("https://cdn.pixabay.com/photo/2018/08/03/04/36/couple-3581038_640.jpg")
-    no-repeat center/cover;
+  background: url("romance.png") no-repeat center/cover;
 }
 
 .heart {
