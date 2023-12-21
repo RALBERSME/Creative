@@ -9,8 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2022/12/20/07/51/woman-7667242_640.jpg")
-    no-repeat center/cover;
+  background: url("frecles.jpg") no-repeat center/cover;
 }
 
 .container {
