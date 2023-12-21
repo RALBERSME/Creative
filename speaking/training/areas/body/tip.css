@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2020/03/14/17/01/flowers-4931217_640.png");
+  background-image: url("flowersBackground.png");
   margin: 0;
   height: 100vh;
   display: flex;

@@ -15,8 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2017/01/11/11/03/notebook-1971495_640.jpg")
-    no-repeat;
+  background: url(notebook.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.5s;
@@ -101,7 +100,7 @@ body {
 }
 @media screen and (max-width: 900px) {
   body {
-    background: url("https://cdn.pixabay.com/photo/2017/01/11/11/03/notebook-1971495_640.jpg");
+    background: url("notebook.jpg");
     transition: 0.5s;
   }
   .card {
