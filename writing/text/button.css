@@ -5,8 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 html {
-  background: url("https://cdn.pixabay.com/photo/2012/04/24/23/49/woman-41201_640.png")
-    no-repeat right;
+  background: url("frau.png") no-repeat right;
 }
 body {
   display: flex;
@@ -14,8 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2020/05/10/11/24/imagination-5153623_640.jpg")
-    no-repeat left;
+  background: url("mann.png") no-repeat left;
 }
 
 h1 {
