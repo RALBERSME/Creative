@@ -5,7 +5,7 @@ body {
 
 .background {
   height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2020/09/14/21/09/houses-5572171_640.png");
+  background: url("houses.png");
 
   background-position: bottom left;
   animation: driving 3s linear infinite;
