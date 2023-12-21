@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("https://cdn.pixabay.com/photo/2023/04/17/12/10/pattern-7932239_640.jpg");
+  background-image: url("pattern.png");
   overflow: hidden;
 }
 .container {
