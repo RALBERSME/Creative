@@ -1,7 +1,7 @@
 .c-image1 {
   height: 60vh;
   width: 80vw;
-  background-image: url("https://cdn.pixabay.com/photo/2019/07/01/16/41/girl-4310391_640.jpg");
+  background-image: url("character1.jpg");
   background-repeat: no-repeat;
   animation: changePic1 16s linear infinite 4s;
 }
