@@ -6,8 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  background: url("https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068_640.jpg")
-    no-repeat center/cover;
+  background: url("photographer.jpg") no-repeat center/cover;
 }
 
 .card {
