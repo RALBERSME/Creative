@@ -4,8 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_640.png")
-    #212121;
+  background: url("childrenBackground.png") #212121;
 }
 
 .line {
@@ -21,7 +20,7 @@ body {
   bottom: 14px;
   width: 50px;
   height: 30px;
-  background: url("https://cdn.pixabay.com/photo/2017/01/31/20/45/cartoon-2027156_640.png");
+  background: url("jumping.png");
   animation: animatehexagon 20s linear infinite;
 }
 
@@ -32,7 +31,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://cdn.pixabay.com/photo/2017/01/31/20/45/cartoon-2027156_640.png");
+  background: url("jumping.png");
   transform: rotate(60deg);
 }
 
@@ -43,7 +42,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://cdn.pixabay.com/photo/2017/01/31/20/45/cartoon-2027156_640.png");
+  background: url("jumping.png");
   transform: rotate(-60deg);
 }
 .circle {
